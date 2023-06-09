@@ -26,7 +26,7 @@ public class MessagesController {
         messageService.postMessage(messageRequest, userEmail);
     }
 
-    @PutMapping("secure/admin/message")
+    @PutMapping("/secure/admin/message")
     public void putMessage(@RequestHeader(value="Authorization") String token,
                            @RequestBody AdminQuestionRequest adminQuestionRequest) throws Exception {
         String userEmail = ExtractJWT.payloadJWTExtraction(token, "\"sub\"");

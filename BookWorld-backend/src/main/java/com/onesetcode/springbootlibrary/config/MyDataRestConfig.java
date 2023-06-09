@@ -3,6 +3,7 @@ package com.onesetcode.springbootlibrary.config;
 import com.onesetcode.springbootlibrary.entity.Book;
 import com.onesetcode.springbootlibrary.entity.Message;
 import com.onesetcode.springbootlibrary.entity.Review;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
